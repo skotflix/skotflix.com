@@ -43,15 +43,27 @@
             #skotflix .footer .link:not(:last-child)::after {
                 color: #737373;
                 content: "\2022";
-                margin-left: 5px;
+                padding-left: 1em;
+                padding-right: 1em;
             }
-            #skotflix .footer a {
+            #skotflix .footer .link a {
                 color: #737373;
                 text-decoration: none;
             }
-            #skotflix .footer a:hover {
+            #skotflix .footer .link a:hover {
                 color: #737373;
                 text-decoration: underline;
+            }
+            #skotflix .footer .link .status {
+                display: inline-block;
+                position: relative;
+            }
+            #skotflix .footer .link .status a,
+            #skotflix .footer .link .status iframe {
+                display: block; 
+            }
+            #skotflix .footer .link .status iframe {
+                padding-top: 0.5em;
             }
         </style>
     </head>
@@ -65,15 +77,17 @@
                     <a href="https://requests.skotflix.com">Requests</a>
                 </div>
                 <div class="link">
-                    <a href="https://status.skotflix.com">Status</a>
-                    <iframe
-                        src="https://status.skotflix.com/badge?theme=dark"
-                        width="250"
-                        height="30"
-                        frameborder="0"
-                        scrolling="no"
-                        style="color-scheme: normal">
-                    </iframe>
+                    <div class="status">
+                        <a href="https://status.skotflix.com">Status</a>
+                        <iframe
+                            src="https://status.skotflix.com/badge?theme=dark"
+                            width="250"
+                            height="30"
+                            frameborder="0"
+                            scrolling="no"
+                            style="color-scheme: normal">
+                        </iframe>
+                    </div>
                 </div>
                 <div class="link">
                     <a href="https://watch.skotflix.com">Watch</a>
