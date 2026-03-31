@@ -17,12 +17,6 @@
                 padding: 0;
                 text-align: center;
             }
-            .betteruptime-announcement__placeholder {
-                height: unset!important;
-            }
-            .betteruptime-announcement .betteruptime-announcement__message {
-                max-width: unset!important;
-            }
             #skotflix {
                 display: none;
             }
@@ -45,13 +39,6 @@
                 color: #737373;
                 text-decoration: underline;
             }
-            #status {
-                bottom: 0;
-                left: 0;
-                padding-bottom: 14px;
-                padding-left: 16px;
-                position: fixed;
-            }
         </style>
     </head>
     <body>
@@ -67,9 +54,6 @@
           <a href="https://watch.skotflix.com">Watch</a>
         </div>
       </picture>
-      <div id="status">
-          <iframe src="https://status.skotflix.com/badge?theme=dark" width="250" height="30" frameborder="0" scrolling="no" style="color-scheme: normal"></iframe>
-      </div>
       <script>
             var i = document.getElementById("skotflix"),
                 m = { h: 365, w: 1240 },
@@ -94,6 +78,5 @@
             window.onload = z;
             window.onresize = z;
         </script>
-        <script src="https://uptime.betterstack.com/widgets/announcement.js" data-id="165759" async="async" type="text/javascript"></script>
     </body>
   </html>
