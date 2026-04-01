@@ -1,0 +1,262 @@
+:root {
+    --sp-button-bg-color:#d91f2b;
+    --sp-button-color:#ffffff;
+    --sp-button-hover-bg-color:#bb0d1d;
+    --sp-link-color:#d91f2b;
+    --sp-link-hover-color:#bb0d1d;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sp-bg-color:#000000;
+        --sp-blue-color:#438bce;
+        --sp-border-color:#000000;
+        --sp-element-bg-color:#11121a;
+        --sp-element-bg-color-100:#181c24;
+        --sp-gray-color:#6c757d;
+        --sp-green-color:#2ecc71;
+        --sp-orange-color:#ff8e31;
+        --sp-primary-text-color:#e8e8e8;
+        --sp-red-color:#e94b35;
+        --sp-secondary-text-color:#c0c0c0;
+        --sp-tertiary-text-color:#909090;
+        --sp-text-green:#2ecc71;
+        --sp-yellow-color:#ffdf49;
+    }
+}
+#spCustomHeader,
+#spNavigator {
+    display: block;
+}
+.btn:not(.md-icon-button) {
+    border-radius: 0.25rem;
+}
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.form-input {
+    font-size: 0.875rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.zdialog.modal .zbutton--primary:hover {
+    background-color: var(--sp-link-hover-color)!important;
+}
+.zdropdownlist .zdropdownlist__item.is-selected {
+    background-color: var(--sp-link-color)!important;
+}
+.zdropdownlist .zdropdownlist__item.is-selected .zdropdownlist__text {
+    color: #fff;
+}
+.zdropdownlist .zdropdownlist__item.on-hover,
+.zdropdownlist .zdropdownlist__item.on-hover .zdropdownlist__text {
+    cursor: pointer;
+}
+.zdropdownlist .zdropdownlist__search .zdropdownlist__searchfield {
+    border-color: transparent;
+}
+.zselectbox,
+.zselectbox:hover,
+.zselectbox.is-active,
+.zselectbox.is-active:hover {
+    background: unset;
+    border-color: var(--sp-border-color);
+}
+.zselectbox .zselectbox__text,
+.zselectbox:hover .zselectbox__text,
+.zselectbox.is-active .zselectbox__text,
+.zselectbox.is-active:hover .zselectbox__text {
+    color: unset;
+}
+#spCustomHeader .sp-header {
+    background-color: unset;
+    box-shadow: none;
+    padding-left: unset!important;
+    padding-right: unset!important;
+    -webkit-box-shadow: none;
+}
+#spCustomHeader .sp-header .sp-logo-wrapper {
+    margin-bottom: unset;
+}
+#spCustomHeader #subscribeMobileButton {
+    margin-top: 1rem;
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .uptime:hover, 
+#spStatusHistory .sp-status-history .sp-status-history__component-row .service-interruption:hover, 
+#spStatusHistory .sp-status-history .sp-status-history__component-row .status-icon:not(.icon-status-operational):hover, 
+#spStatusHistory .sp-status-history .sp-status-history__component-group-row .uptime:hover, 
+#spStatusHistory .sp-status-history .sp-status-history__component-group-row .service-interruption:hover, 
+#spStatusHistory .sp-status-history .sp-status-history__component-group-row .status-icon:not(.icon-status-operational):hover {
+    background-color: unset;
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2),
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(3) {
+    flex-direction: row-reverse!important;
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div {
+    width: calc(100% / 30 - 1px);
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div:first-child > span {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div:last-child > span {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .status-cell,
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .partial-outage-cell,
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .major-outage-cell,
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .maintenance-cell,
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .degraded-performance-cell,
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .informational-cell,
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .operational-cell {
+    border-radius: 0;
+    margin-right: 1px;
+    width: 100%;
+}
+#spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div .maintenance-cell {
+    background-color: var(--sp-green-color);
+}
+#spStatusHistory .sp-status-history .sp-status-history-table-search {
+    background-color: unset;
+}
+#spStatusHistory .sp-status-history + div {
+    display: none!important;
+}
+#spPerfChart .canvas-property {
+    background-color: unset!important;
+}
+#spPerfChart .svgarea .axislabel, 
+#spPerfChart .svgarea .ticklabel {
+    fill: var(--sp-secondary-text-color)!important;
+}
+#spPerfChart .legendarea .zc-legend-series {
+    margin-right: 1em;
+}
+#spPerfChart .legendarea .zc-legend-series:last-child {
+    margin-right: 0;
+}
+#spPerfChart .legendarea .zc-legend-series .zc-legend-legendlabel {
+    color: var(--sp-tertiary-text-color)!important;
+}
+#spNavigator .fs-sub-base a {
+    display: none;
+}
+#spNavigator .row .col-sm-6 {
+    flex: 0 0 50%;
+    font-size: 0.875em;
+    max-width: 50%;
+}
+#spNavigator .row .col-sm-6.justify-content-sm-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+#spNavigator .row .col-sm-6.justify-content-sm-start {
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
+}
+#spNavigator .row .col-sm-6 .my-sm-0 {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+}
+@media (min-width: 601px) {
+    #spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div {
+        width: calc(100% / 60 - 1.5px);
+    }
+}
+@media (min-width: 991px) {
+    #spStatusHistory .sp-status-history .sp-status-history__component-row .flex-row:nth-child(2) > div {
+        width: calc(100% / 90 - 2px);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .card {
+        -moz-box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.07);
+        box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.07);
+    }
+    .form-input {
+        background-color: transparent;
+        border-color: var(--sp-gray-color);
+        border-radius: 0.25rem;
+        color: var(--sp-primary-text-color);
+    }
+    .tippy-box {
+        background-color: var(--sp-element-bg-color-100)!important;
+        color: var(--sp-primary-text-color)!important;
+    }
+    .tippy-arrow:before {
+        border-bottom-color: var(--sp-element-bg-color-100)!important;
+        border-top-color: var(--sp-element-bg-color-100)!important;
+    }
+    .zdialog,
+    .zdialog .subscriber-panel {
+        background-color: var(--sp-element-bg-color);
+        color: var(--sp-primary-text-color);
+    }
+    .zdialog {
+        border-radius: 0.5rem;
+        border-width: 0;
+        box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.15),
+            0 4px 80px -8px rgba(255, 255, 255, 0.25),
+            0 4px 4px -2px rgba(255, 255, 255, 0.15);
+    }
+    .zdialog .zdialog__header {
+        background-color: var(--sp-element-bg-color-100);
+    }
+    .zdialog .zdialog__header .zdialog__title {
+        color: var(--sp-primary-text-color);
+    }
+    .zdialog.modal .zbutton--normal {
+        background-color: var(--sp-element-bg-color-100)!important;
+    }
+    .zdialog.modal .zbutton--normal:hover {
+        background-color: var(--sp-element-bg-color)!important;
+    }
+    .zdialog--overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .zdropdownlist {
+        background-color: var(--sp-element-bg-color);
+        border-color: var(--sp-gray-color);
+        border-radius: 0.25rem;
+        overflow: hidden;
+    }
+    .zdropdownlist .zdropdownlist__item {
+        background-color: var(--sp-element-bg-color);
+    }
+    .zdropdownlist .zdropdownlist__item.on-hover {
+        background-color: var(--sp-element-bg-color-100)!important;
+    }
+    .zdropdownlist .zdropdownlist__item.is-selected.on-hover {
+        background-color: var(--sp-link-hover-color)!important;
+    }
+    .zdropdownlist .zdropdownlist__item .zdropdownlist__text {
+        color: var(--sp-primary-text-color);
+    }
+    .zdropdownlist .zdropdownlist__search {
+        background-color: var(--sp-element-bg-color-100)!important;
+        border-color: var(--sp-gray-color);
+        color: var(--sp-primary-text-color)!important;
+    }
+    .zdropdownlist .zdropdownlist__search .zdropdownlist__searchfield {
+        background: transparent;
+        color: var(--sp-primary-text-color);
+        font-size: 0.875rem;
+    }
+    .zdropdownlist .zdropdownlist__noresults {
+        background-color: var(--sp-element-bg-color);
+    }
+    .zdropdownlist .zdropdownlist__noresults .zdropdownlist__noresultstext {
+        color: var(--sp-primary-text-color);
+    }
+    .zselectbox,
+    .zselectbox:hover,
+    .zselectbox.is-active,
+    .zselectbox.is-active:hover {
+        border-color: var(--sp-gray-color);
+    }
+    #spNavigator .border-bottom {
+        border-bottom-color: var(--sp-element-bg-color);
+    }
+}

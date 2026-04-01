@@ -1,0 +1,8 @@
+body.sp-bg {
+  background-color: none;
+}
+#spCustomHeader,
+#spNavigator,
+#scrollTopBottom {
+    display: none;
+}
